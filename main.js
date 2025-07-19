@@ -1,6 +1,6 @@
 //main.js
 
-import { getLista, limpaLista, adicionaLista } from "./lista.js";
+import { getLista, limpaLista, adicionaNaLista } from "./lista.js";
 
 const o1Itens = document.querySelector("#itens");
 const pEntrada = document.querySelector("#entrada");
@@ -33,6 +33,7 @@ function adicionarItemNaLista() {
 
     if (!textoUsuario) return;
 
-    adicionaLista(textoUsuario);
+    adicionaNaLista(textoUsuario);
     atualizarLista();
+    pEntrada.textContent = '';
 }
